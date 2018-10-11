@@ -1,0 +1,11 @@
+apiVersion: "integreatly.org/v1alpha1"
+kind: "WebApp"
+metadata:
+  name: "tutorial-web-app-operator"
+spec:
+  template_path: "/home/tutorial-web-app-operator/deploy/template/tutorial-web-app.yml"
+  image: "quay.io/integreatly/tutorial-web-app"
+  image_tag: "latest"
+  oauth_client_id: tutorial-web-app
+  openshift_host: ""
+  dc_name: tutorial-web-app
